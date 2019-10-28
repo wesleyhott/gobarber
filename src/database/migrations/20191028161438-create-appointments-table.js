@@ -3,14 +3,9 @@ module.exports = {
     return queryInterface.createTable('appointments', {
       id: {
         type: Sequelize.INTEGER,
-        allownull: false,
+        allowNull: false,
         autoIncrement: true,
         primarykey: true,
-        unique: true,
-      },
-      name: {
-        type: Sequelize.STRING,
-        allownull: false,
       },
       date: {
         type: Sequelize.DATE,
@@ -33,15 +28,15 @@ module.exports = {
       },
       created_at: {
         type: Sequelize.DATE,
-        allownull: false,
+        allowNull: false,
       },
       updated_at: {
         type: Sequelize.DATE,
-        allownull: false,
+        allowNull: false,
       },
       canceled_at: {
         type: Sequelize.DATE,
-        allownull: false,
+        allowNull: true,
       },
     });
   },
